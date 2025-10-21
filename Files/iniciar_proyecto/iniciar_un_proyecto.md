@@ -109,16 +109,26 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
 
 15. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/FuncionesPin.png"
-       alt="Funciones de cada Pin"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Funciones de cada Pin
-  </figcaption>
-</figure>   
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/FuncionesPin.png" alt="Funciones de cada pin" width="700">
+  <br>
+  <em>Funciones de cada pin</em>
+</p>
+
 
  ---
+
+ 16. En el IDE, sobre el microcontrolador encontrarás dos pestañas: `Pinout view` y `System view`.
+ - **Pinout view** da la vista previa al microcontrolador.
+ - **System view** proporciona un resumen de todos los sistemas habilitados hasta el momento.
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/PinOutView.png" alt="Pinout view y System view" width="700">
+  <br>
+  <em>Pinout view y System view</em>
+</p>
+
 
 
 
