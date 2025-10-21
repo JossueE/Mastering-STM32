@@ -12,11 +12,11 @@ Instalaremos las herramientas oficiales de STMicroelectronics y otras utilidades
 ## 📖 Partes del Capítulo
 
 - [🧠 1. ¿Qué softwares existen?](#-1-qué-softwares-existen)
-- [⚙️ 2. Instalación paso a paso](#2-instalación-paso-a-paso)
+- [⚙️ 2. Instalación paso a paso](#%EF%B8%8F-2-instalaci%C3%B3n-paso-a-paso) 
   - [🪟 Windows](#-windows)
   - [🐧 Linux (Ubuntu / Debian)](#-linux-ubuntu--debian)
   - [🍎 macOS](#-macos)
-- [🗂️ 3. Configura tu Workspace](#3-configura-tu-workspace)
+- [🗂️ 3. Configura tu Workspace](#%EF%B8%8F-3-configura-tu-workspace)
 ---
 
 ## 🧠 1. ¿Qué softwares existen?
