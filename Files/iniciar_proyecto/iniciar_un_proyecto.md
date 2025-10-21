@@ -18,27 +18,22 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
    - Tu **placa NUCLEO** (por ejemplo: `NUCLEO-H563ZI`)  
    - O directamente el **microcontrolador** (por ejemplo: `STM32H563ZITx`)
 
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/TargetSelection.png"
-       alt="Ventana Target Selection"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Ventana Target Selection
-  </figcaption>
-</figure>   
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/TargetSelection.png" alt="Ventana Target Selection" width="700">
+  <br>
+  <em>Ventana Target Selection</em>
+</p>  
 
 ---
 
 4. Dirígete a la ventana `Board Selector` y en `Commercial Part Number` coloca el nombre de tu placa. 
 
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/BoardSelector.png"
-       alt="Ventana Target Selection"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Ventana Target Selection
-  </figcaption>
-</figure>   
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/BoardSelector.png" alt="Ventana Board Selection" width="700">
+  <br>
+  <em>Ventana Board Selection</em>
+</p>  
+
 
 ---
 
@@ -54,27 +49,21 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 10. Verifica que en las opciones se encuentre como archivo `Executable` 
 11. Presiona `Finish`.
 
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/ConfigurationFile.png"
-       alt="Ventana de Configuración"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Ventana de Configuración
-  </figcaption>
-</figure>   
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/ConfigurationFile.png" alt="Ventana de Configuración" width="700">
+  <br>
+  <em>Ventana de Configuración</em>
+</p>  
 
 ---
 
 12. Selecciona `Disable All` o `Unselect All` y selecciona `Next`
 
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/BoardOptions.png"
-       alt="Ventana de Opciones"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Ventana de Opciones
-  </figcaption>
-</figure>   
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/BoardOptions.png" alt="Ventana de Opciones" width="700">
+  <br>
+  <em>Ventana de Opciones</em>
+</p>
 
 > [!NOTE]
 > Las definiciones necesarias para tu tarjeta de desarrollo específica se comenzarán a descargar. El tamaño de la descarga es de aproximadamente 1GB.
@@ -83,14 +72,12 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 ---
 
 13. Al terminar podrás ver una representación gráfica del microcontrolador integrado en tu tarjeta.
-<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="../../Images/iniciar_proyecto/ReMicro.png"
-       alt="Representación Gráfica del Micro"
-       style="max-width:50%; height:auto;" />
-  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
-    Representación Gráfica del Micro
-  </figcaption>
-</figure>   
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/ReMicro.png" alt="Representación Gráfica del Micro" width="700">
+  <br>
+  <em>Representación Gráfica del Micro</em>
+</p>
 
 ---
 
@@ -129,7 +116,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
   <em>Pinout view y System view</em>
 </p>
 
-
+---
 
 
 
