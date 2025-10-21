@@ -1,6 +1,6 @@
 # 🧩 Instalación del entorno de desarrollo para STM32
 
-[(Volver al Indice)](README.md)
+[(Volver al Indice)](https://github.com/JossueE/Mastering-STM32/tree/main?tab=readme-ov-file#%C3%ADndice)
 
 En este capítulo aprenderás a preparar tu entorno de desarrollo para trabajar con **microcontroladores STM32**.  
 Instalaremos las herramientas oficiales de STMicroelectronics y otras utilidades necesarias para compilar, cargar y depurar tus proyectos. Cabe mencionar que la familia STM32 es muy extensa, es por ello que algunas placas orientadas a diferentes entornos como la **STM32H747I-DISCO**  que incluye pantalla, tienen interfases propias para su desarrollo. 
