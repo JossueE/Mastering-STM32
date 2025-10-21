@@ -18,10 +18,14 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
    - Tu **placa NUCLEO** (por ejemplo: `NUCLEO-H563ZI`)  
    - O directamente el **microcontrolador** (por ejemplo: `STM32H563ZITx`)
 
-![Ventana Target Selection](Images/iniciar_proyecto/TargetSelection.png)
-
-*Ventana Target Selection*
-
+<figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
+  <img src="..Images/iniciar_proyecto/TargetSelection.png"
+       alt="Ventana Target Selection"
+       style="max-width:50%; height:auto;" />
+  <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
+    Ventana Target Selection
+  </figcaption>
+</figure>   
 
 4. Dirígete a la ventana `Board Selector` y en `Commercial Part Number` coloca el nombre de tu placa. 
 
@@ -47,7 +51,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 11. Presiona `Finish`.
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/iniciar_proyecto/ConfigurationFile.png"
+  <img src="..Images/iniciar_proyecto/ConfigurationFile.png"
        alt="Ventana de Configuración"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
