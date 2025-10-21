@@ -1,6 +1,6 @@
 # 🧠 Mastering STM32 *(versión en Español)*
 > Una guía práctica para entender, configurar y dominar los microcontroladores STM32 desde cero.
-[(Volver al Indice)](README.md)
+[(Volver al Indice)](https://github.com/JossueE/Mastering-STM32/tree/main?tab=readme-ov-file#%C3%ADndice)
 
 ## 👋 Hola! Soy Jossue Espinoza.
 
