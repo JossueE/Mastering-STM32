@@ -1,6 +1,6 @@
 # 🧠 Mastering STM32 *(versión en Español)*
 > Una guía práctica para entender, configurar y dominar los microcontroladores STM32 desde cero.
-[(Ir al Indice)](README.md)
+[(Volver al Indice)](README.md)
 
 ## 👋 Hola! Soy Jossue Espinoza.
 

@@ -1,3 +1,4 @@
 # Índice
 
-1. [Introducción](Files/Introducción/Introduccion.md)
+1. [Introducción](Files/Introducción/Introduction.md)
+2. [Instalación](Files/Instalación/Instalation.md)
