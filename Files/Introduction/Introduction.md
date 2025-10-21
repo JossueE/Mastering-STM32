@@ -39,7 +39,7 @@ En este curso utilizaremos la placa **NUCLEO-H563ZI** como base de desarrollo.
 ---
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/Introduction/NUCLEO-H563ZI.jpg"
+  <img src="../../Images/Introduction/NUCLEO-H563ZI.jpg"
        alt="Placa NUCLEO-H563ZI"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
