@@ -27,6 +27,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
   </figcaption>
 </figure>   
 
+---
+
 4. Dirígete a la ventana `Board Selector` y en `Commercial Part Number` coloca el nombre de tu placa. 
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
@@ -37,6 +39,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
     Ventana Target Selection
   </figcaption>
 </figure>   
+
+---
 
 5. Una ves encontrada seleccionala. 
 
@@ -59,6 +63,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
   </figcaption>
 </figure>   
 
+---
+
 12. Selecciona `Disable All` o `Unselect All` y selecciona `Next`
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
@@ -74,6 +80,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 > Las definiciones necesarias para tu tarjeta de desarrollo específica se comenzarán a descargar. El tamaño de la descarga es de aproximadamente 1GB.
 > Esta esla única vez que tendrás que realizar esta descarga.
 
+---
+
 13. Al terminar podrás ver una representación gráfica del microcontrolador integrado en tu tarjeta.
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
   <img src="../../Images/iniciar_proyecto/ReMicro.png"
@@ -83,6 +91,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
     Representación Gráfica del Micro
   </figcaption>
 </figure>   
+
+---
 
 14. Al hacer `Zoom In` podrás ver que cada pin tiene un color diferente.
 
@@ -95,6 +105,8 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 | 🔴 Rojo     | **Conflicto o error** (dos funciones usan el mismo pin).        | SPI1 y USART2 en el mismo pin.  |
 | 🟣 Morado   | **Función alternativa activa (Alternate Function)**.            | PWM, I²C, SPI, UART, TIM.       |
 
+---
+
 
 15. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
@@ -106,6 +118,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
   </figcaption>
 </figure>   
 
+ ---
 
 
 
