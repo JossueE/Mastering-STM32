@@ -122,4 +122,4 @@ Cuando abras **STM32CubeIDE** por primera vez, el programa te pedirá elegir la 
 - Si no tienes una razón específica para cambiarlo, usa la carpeta por defecto sugerida por STM32CubeIDE. Es la opción más estable y fácil de respaldar.
 
 ---
-[(Manejo de GPIO)](README.md)
+[(Ver siguiente capítulo: Iniciar un Proyecto)](Files/iniciar_proyecto/iniciar_un_proyecto.md)
