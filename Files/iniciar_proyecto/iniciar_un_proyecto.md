@@ -50,7 +50,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 11. Presiona `Finish`.
 
 <p align="center">
-  <img src="../../Images/iniciar_proyecto/ConfigurationFile.png" alt="Ventana de Configuración" width="700">
+  <img src="../../Images/iniciar_proyecto/ConfigurationFile.png" alt="Ventana de Configuración" width="400">
   <br>
   <em>Ventana de Configuración</em>
 </p>  
@@ -60,7 +60,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 12. Selecciona `Disable All` o `Unselect All` y selecciona `Next`
 
 <p align="center">
-  <img src="../../Images/iniciar_proyecto/BoardOptions.png" alt="Ventana de Opciones" width="700">
+  <img src="../../Images/iniciar_proyecto/BoardOptions.png" alt="Ventana de Opciones" width="400">
   <br>
   <em>Ventana de Opciones</em>
 </p>
