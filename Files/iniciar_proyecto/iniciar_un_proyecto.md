@@ -1,6 +1,6 @@
 # 🔨 Inicia tu Primer Proyecto
 
-[(Volver al Índice)](../README.md)
+[(Volver al Indice)](https://github.com/JossueE/Mastering-STM32/tree/main?tab=readme-ov-file#%C3%ADndice)
 
 ---
 
