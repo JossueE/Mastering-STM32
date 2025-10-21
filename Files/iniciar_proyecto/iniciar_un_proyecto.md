@@ -36,6 +36,15 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 > Esta esla única vez que tendrás que realizar esta descarga.
 
 13. Al terminar podrás ver una representación gráfica del microcontrolador integrado en tu tarjeta.
+14. Al hacer `Zoom In` podrás ver que cada pin tiene un color diferente.
+- El color gris representa que el pin no ha sido asignado. 
+- El color crema (amarillo pálido) representa voltajes del microcontrolador (alimentación, tierra, referencia, ...).
+- El color verde representa pines asignados. 
+- El color rojo representa pines bloqueados o restringidos.
+
+15. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
+
+
 
 
 
