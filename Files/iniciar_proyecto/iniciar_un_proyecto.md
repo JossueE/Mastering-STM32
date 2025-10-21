@@ -9,6 +9,14 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
 ---
 
+## 📖 Partes del Capítulo
+
+- [🧱 1. Crear un nuevo proyecto](#1-crear-un-nuevo-proyecto)
+- [🧭 2. Explorando la Ventana .ioc - Pinout & Configuration](#2-explorando-la-ventana-ioc---pinout--configuration)
+- [⏱️ 3. Explorando la pestaña Clock Configuration](#3-explorando-la-pestaña-clock-configuration)
+
+---
+
 ## 🧱 1. Crear un nuevo proyecto
 
 1. Con **STM32CubeIDE** abierto y el workspace seleccionado.  
@@ -79,9 +87,11 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
   <em>Representación Gráfica del Micro</em>
 </p>
 
+## 🧭 2. Explorando la Ventana .ioc - Pinout & Configuration
+
 ---
 
-14. Al hacer `Zoom In` podrás ver que cada pin tiene un color diferente.
+1. Al hacer `Zoom In` podrás ver que cada pin tiene un color diferente.
 
 | Color       | Significado                                                     | Ejemplo                         |
 | ----------- | --------------------------------------------------------------- | ------------------------------- |
@@ -95,7 +105,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 ---
 
 
-15. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
+2. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
 
 <p align="center">
   <img src="../../Images/iniciar_proyecto/FuncionesPin.png" alt="Funciones de cada pin" width="700">
@@ -106,7 +116,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
  ---
 
- 16. En el IDE, sobre el microcontrolador encontrarás dos pestañas: `Pinout view` y `System view`.
+ 3. En el IDE, sobre el microcontrolador encontrarás dos pestañas: `Pinout view` y `System view`.
  - **Pinout view** da la vista previa al microcontrolador.
  - **System view** proporciona un resumen de todos los sistemas habilitados hasta el momento.
 
@@ -117,7 +127,69 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 </p>
 
 ---
+4. A la izquierda del microcontrolador encontrarás el panel **Categories**, que agrupa todos los periféricos y módulos del STM32 organizados por tipo de funcionalidad.  
 
+Desde aquí puedes activar o desactivar periféricos, configurar pines, y habilitar controladores de hardware según las necesidades de tu proyecto. Para ello cuentas con la pestaña `Mode` y `Configuration` que se mostraran automáticamente cuando actives algun elemento de las categorías.
 
+| Categoría | Descripción breve |
+|------------|------------------|
+| **System Core** | Configuración principal del microcontrolador: reloj, interrupciones, GPIO, DMA, NVIC, etc. |
+| **Analog** | Periféricos analógicos como ADC, DAC o comparadores. |
+| **Timers** | Control de tiempo, generación de PWM o captura de señales. |
+| **Connectivity** | Comunicación con otros dispositivos: UART, SPI, I²C, CAN, USB, Ethernet, etc. |
+| **Multimedia** | Periféricos gráficos o de audio, como LCD, DCMI, o SAI (solo en ciertos modelos). |
+| **Security** | Módulos de seguridad como AES, RNG, o TrustZone. |
+| **Computing** | Aceleradores matemáticos, CRC o FPU. |
+| **Middleware and Software Packages** | Librerías adicionales: FreeRTOS, USB Stack, FatFS, LWIP, etc. |
+| **Trace and Debug** | Opciones para depuración: SWD, ITM, ETM, o semihosting. |
+| **Power and Thermal** | Configuración de modos de bajo consumo o gestión térmica. |
+| **Utilities / BSP / Other** | Herramientas y configuraciones específicas de placa. |
 
+> [!NOTE]
+> No te preocupes si algunas de estas categorías aún no te resultan familiares.  
+> A lo largo del curso iremos explorando cada una de ellas en el contexto de la **tecnología o periférico correspondiente** (por ejemplo, *Timers* cuando hablemos de **PWM**, *Connectivity* cuando configuremos **UART o SPI**, etc.).
 
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/Categories.png" alt="Panel Categories" width="400">
+  <br>
+  <em>Panel Categories</em>
+</p>
+
+---
+
+## ⏱️ 3. Explorando la pestaña Clock Configuration
+
+Una vez configurados los periféricos en la ventana **Pinout & Configuration**, la siguiente pestaña —**Clock Configuration**— te permite visualizar y ajustar las **frecuencias internas del sistema**.  
+En otras palabras, aquí defines **a qué velocidad correrá tu microcontrolador** y cómo se distribuyen los relojes hacia cada periférico.
+
+ **Propósito principal:**  
+Asegurar que todos los módulos del sistema (núcleo, buses, periféricos) funcionen dentro de los límites de frecuencia recomendados.
+
+| Elemento | Descripción |
+|-----------|-------------|
+| **HSE (High Speed External)** | Fuente externa de reloj, normalmente un cristal de 8 MHz o un generador conectado al pin HSE. |
+| **HSI (High Speed Internal)** | Reloj interno del microcontrolador (típicamente 64 MHz en series H5/H7). |
+| **LSE / LSI** | Relojes de baja frecuencia usados por el RTC o watchdog. |
+| **PLL (Phase Locked Loop)** | Multiplicadores de frecuencia que permiten obtener velocidades más altas (por ejemplo, 250 MHz a partir de un HSE de 8 MHz). |
+| **System Clock Mux (SYSCLK)** | Selecciona la fuente principal de reloj del sistema (HSI, HSE o PLL). |
+| **Prescalers (AHB, APB1, APB2, APB3)** | Dividen la frecuencia del sistema para alimentar buses o periféricos con relojes más lentos. |
+| **Output Clocks** | Muestran las frecuencias finales a las que operan los periféricos (TIM, USART, I²C, etc.). |
+
+> [!NOTE]
+> No te preocupes si algunas de estas categorías aún no te resultan familiares.  
+> A lo largo del curso iremos explorando cada una de ellas en el contexto de la **tecnología o periférico correspondiente** (por ejemplo, *Timers* cuando hablemos de **PWM**, *Connectivity* cuando configuremos **UART o SPI**, etc.).
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/ClockConfiguration.png" alt="Pestaña Clock Configuration" width="400">
+  <br>
+  <em>Pestaña Clock Configuration</em>
+</p>
+
+--- 
+
+Con esto ya cuentas con una base sólida para **crear y configurar tu primer proyecto** en STM32CubeIDE.
+Si has seguido los capítulos paso a paso, habrás notado que **aún no hemos entrado directamente en la interfaz de código**; esto es intencional, ya que primero necesitamos comprender la estructura del entorno y la lógica detrás de la configuración del microcontrolador.
+
+En el siguiente capítulo exploraremos los **GPIO (General Purpose Input/Output)** y aprenderás a interactuar con el mundo físico mediante un pequeño demo práctico desde tu microcontrolador STM32. 💡
+
+[(Ver siguiente capítulo: GPIO)](../../Files/iniciar_proyecto/iniciar_un_proyecto.md)
