@@ -19,7 +19,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
    - O directamente el **microcontrolador** (por ejemplo: `STM32H563ZITx`)
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="..Images/iniciar_proyecto/TargetSelection.png"
+  <img src="../../Images/iniciar_proyecto/TargetSelection.png"
        alt="Ventana Target Selection"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
@@ -30,7 +30,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 4. Dirígete a la ventana `Board Selector` y en `Commercial Part Number` coloca el nombre de tu placa. 
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/iniciar_proyecto/BoardSelector.png"
+  <img src="../../Images/iniciar_proyecto/BoardSelector.png"
        alt="Ventana Target Selection"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
@@ -51,7 +51,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 11. Presiona `Finish`.
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="..Images/iniciar_proyecto/ConfigurationFile.png"
+  <img src="../../Images/iniciar_proyecto/ConfigurationFile.png"
        alt="Ventana de Configuración"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
@@ -62,7 +62,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 12. Selecciona `Disable All` o `Unselect All` y selecciona `Next`
 
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/iniciar_proyecto/BoardOptions.png"
+  <img src="../../Images/iniciar_proyecto/BoardOptions.png"
        alt="Ventana de Opciones"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
@@ -76,7 +76,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
 13. Al terminar podrás ver una representación gráfica del microcontrolador integrado en tu tarjeta.
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/iniciar_proyecto/ReMicro.png"
+  <img src="../../Images/iniciar_proyecto/ReMicro.png"
        alt="Representación Gráfica del Micro"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
@@ -98,7 +98,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
 15. Si das `Click Izquierdo` sobre cualquier pin, verás las funciones que cada uno puede obtener.
 <figure style="margin:0; text-align:center; border:1px solid #eaecef; padding:6px; border-radius:6px;">
-  <img src="Images/iniciar_proyecto/FuncionesPin.png"
+  <img src="../../Images/iniciar_proyecto/FuncionesPin.png"
        alt="Funciones de cada Pin"
        style="max-width:50%; height:auto;" />
   <figcaption style="font-size:0.9em; color:#6a737d; margin-top:4px;">
