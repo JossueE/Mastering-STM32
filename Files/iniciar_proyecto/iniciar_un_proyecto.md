@@ -150,7 +150,7 @@ Desde aquí puedes activar o desactivar periféricos, configurar pines, y habili
 > A lo largo del curso iremos explorando cada una de ellas en el contexto de la **tecnología o periférico correspondiente** (por ejemplo, *Timers* cuando hablemos de **PWM**, *Connectivity* cuando configuremos **UART o SPI**, etc.).
 
 <p align="center">
-  <img src="../../Images/iniciar_proyecto/Categories.png" alt="Panel Categories" width="400">
+  <img src="../../Images/iniciar_proyecto/Categories.png" alt="Panel Categories" width="200">
   <br>
   <em>Panel Categories</em>
 </p>
@@ -180,7 +180,7 @@ Asegurar que todos los módulos del sistema (núcleo, buses, periféricos) funci
 > A lo largo del curso iremos explorando cada una de ellas en el contexto de la **tecnología o periférico correspondiente** (por ejemplo, *Timers* cuando hablemos de **PWM**, *Connectivity* cuando configuremos **UART o SPI**, etc.).
 
 <p align="center">
-  <img src="../../Images/iniciar_proyecto/ClockConfiguration.png" alt="Pestaña Clock Configuration" width="400">
+  <img src="../../Images/iniciar_proyecto/ClockConfiguration.png" alt="Pestaña Clock Configuration" width="700">
   <br>
   <em>Pestaña Clock Configuration</em>
 </p>
