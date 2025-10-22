@@ -1,4 +1,4 @@
-# 🧩 Conoce tu Placa
+# 🧩 Conoce tu Tarjeta
 
 [(Volver al Indice)](https://github.com/JossueE/Mastering-STM32/tree/main?tab=readme-ov-file#%C3%ADndice)
 

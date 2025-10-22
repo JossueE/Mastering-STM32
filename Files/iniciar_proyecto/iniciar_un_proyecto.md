@@ -1,4 +1,4 @@
-# 🔨 Inicia tu Primer Proyecto
+# 🔨 Configura tu Tarjeta
 
 [(Volver al Indice)](https://github.com/JossueE/Mastering-STM32/tree/main?tab=readme-ov-file#%C3%ADndice)
 
@@ -187,8 +187,14 @@ Asegurar que todos los módulos del sistema (núcleo, buses, periféricos) funci
 
 --- 
 
+> [!NOTE]
+> Te daré la confguración específica para cada función como: GPIO, ADC, UART, etc. 
+> En el capítulo correspondiente, así que no corras prisa, que lo revisaremos.
+
 Con esto ya cuentas con una base sólida para **crear y configurar tu primer proyecto** en STM32CubeIDE.
 Si has seguido los capítulos paso a paso, habrás notado que **aún no hemos entrado directamente en la interfaz de código**; esto es intencional, ya que primero necesitamos comprender la estructura del entorno y la lógica detrás de la configuración del microcontrolador.
+
+En el siguiente capítulo exploraremos nuestro lugar de trabajo, te daré una explicación rápida de las secciones más importantes y como utilizarlas. 
 
 En el siguiente capítulo exploraremos los **GPIO (General Purpose Input/Output)** y aprenderás a interactuar con el mundo físico mediante un pequeño demo práctico desde tu microcontrolador STM32. 💡
 
