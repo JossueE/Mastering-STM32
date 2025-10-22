@@ -11,9 +11,9 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 
 ## 📖 Partes del Capítulo
 
-- [🧱 1. Crear un nuevo proyecto](#1-crear-un-nuevo-proyecto)
-- [🧭 2. Explorando la Ventana .ioc - Pinout & Configuration](#2-explorando-la-ventana-ioc---pinout--configuration)
-- [⏱️ 3. Explorando la pestaña Clock Configuration](#3-explorando-la-pestaña-clock-configuration)
+- [🧱 1. Crear un nuevo proyecto](#-1-crear-un-nuevo-proyecto)
+- [🧭 2. Explorando la Ventana .ioc - Pinout & Configuration](#-2-explorando-la-ventana-ioc---pinout--configuration)
+- [⏱️ 3. Explorando la pestaña Clock Configuration](#%EF%B8%8F-3-explorando-la-pesta%C3%B1a-clock-configuration)
 
 ---
 
