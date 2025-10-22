@@ -9,6 +9,6 @@
         - [2. Explorando la Ventana .ioc - Pinout & Configuration](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#-2-explorando-la-ventana-ioc---pinout--configuration)
         - [3. Explorando la pestaña Clock Configuration](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-3-explorando-la-pesta%C3%B1a-clock-configuration)
     
-    - [Conoce tu Espacio de Trabajo]()
+    - [Conoce tu Espacio de Trabajo](Files/iniciar_proyecto/tu_espacio_trabajo.md)
 
 5. [GPIO]()
