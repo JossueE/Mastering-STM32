@@ -140,7 +140,7 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
 </p>
 
 15. Guarda tu archivo con la clave `Ctrl + Shift + S`
-16. Te pedirá si quieres crear tu código. Dales que `Sí`
+16. Te pedirá si quieres crear tu código. Dale que `Sí`
 17. En el caso de que no aparezca códigos o no veas archivos generados a la izquierda, revisa el contenido del capítulo [Iniciar Proyecto: Generar Código](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
 
 18. Dirígete al Archivo `main.c` si te parece abrumador ver tantos archivos. O código que no entiendes, revisa el capítulo [Iniciar Proyecto: Conoce tu Espacio de Trabajo](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md) en el cuál te doy una explicación rápida de lo que ves y las herramientas que utilizaremos. 
@@ -150,4 +150,6 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
   <br>
   <em>Primera vistaso de main.c</em>
 </p>
+
+19. Para este curso 
 

@@ -44,6 +44,9 @@ A continuación, veremos cada parte del proyecto y su función principal.
   <em>Estructura típica de un proyecto dentro del Workspace.</em>
 </p>
 
+> [!NOTE]
+> Cabe mencionar que si tu placa es diferente, pueden existir pequeñas diferencias. Es completamente normal. Si tienes dos núcleos aseguraté de trabajar sobre el que hayas seleccionado. 
+
 Cada vez que guardas cambios en el archivo `.ioc`, CubeIDE actualiza automáticamente los archivos base del proyecto.  
 Estos archivos contienen la inicialización de periféricos, reloj del sistema y funciones HAL. Esto significa que si nosotros quisieramos activar un protocolo de comunicación, después de haber culminado nuestra configuración. Nuestros archivos de programación se ajustarían de manera automática sin necesidad de involucrarnos en el código. 
 

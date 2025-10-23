@@ -206,10 +206,10 @@ Cuando cambias la frecuencia (por ejemplo, de **250 MHz a 75 MHz**), **STM32Cube
 ## ✏️ 4. Generar el Código
 Una vez configuradas las funciones de nuestro micrcontrolador. Podemos Crear nuestro código con los parámetros configurados. Para ello presionaremos `Ctrl + Shift + S`.
 
-Nos preguntará si queremos generar nuestro código. A lo que deberemos responder que `Sí`.
+Nos preguntará si queremos generar nuestro código. A lo que deberemos responder que `Sí`. Selecciona la misma opción cuando te pregunte si deseas asociar tu proyecto con una perspectiva de C/C++.
 
 > [!IMPORTANT]
-> Si cómo se generan estos archivos a la Izquierda algo anda mal. 
+> Si NO se generan estos archivos a la Izquierda o no ha cambiado nada, algo anda mal. 
 
 <p align="center">
   <img src="../../Images/iniciar_proyecto/ArchivosGenerados.png" alt="Archivos Generados Tras Guardar" width="700">
