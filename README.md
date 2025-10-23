@@ -8,7 +8,7 @@
         - [1. Crear un nuevo proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#-1-crear-un-nuevo-proyecto)
         - [2. Explorando la Ventana .ioc - Pinout & Configuration](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#-2-explorando-la-ventana-ioc---pinout--configuration)
         - [3. Explorando la pestaña Clock Configuration](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-3-explorando-la-pesta%C3%B1a-clock-configuration)
-        - [4. Generar el Código](hub.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
+        - [4. Generar el Código](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
     
     - [Conoce tu Espacio de Trabajo](Files/iniciar_proyecto/tu_espacio_trabajo.md)
 
