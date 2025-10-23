@@ -140,4 +140,6 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
 </p>
 
 15. Guarda tu archivo con la clave `Ctrl + Shift + S`
+16. Te pedirá si quieres crear tu código. Dales que `Sí`
+17. En el caso de que no suceda nada, dirígete a
 

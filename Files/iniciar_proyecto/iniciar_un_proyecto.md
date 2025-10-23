@@ -14,6 +14,7 @@ En esta sección aprenderás a crear un nuevo proyecto desde cero, seleccionar e
 - [🧱 1. Crear un nuevo proyecto](#-1-crear-un-nuevo-proyecto)
 - [🧭 2. Explorando la Ventana .ioc - Pinout & Configuration](#-2-explorando-la-ventana-ioc---pinout--configuration)
 - [⏱️ 3. Explorando la pestaña Clock Configuration](#%EF%B8%8F-3-explorando-la-pesta%C3%B1a-clock-configuration)
+- [✏️ 4. Generar el Código]()
 
 ---
 
@@ -199,7 +200,36 @@ Cuando cambias la frecuencia (por ejemplo, de **250 MHz a 75 MHz**), **STM32Cube
 
 [!NOTE]
 > Más adelante, cuando implementes **Timers, ADC o PWM**, verás cómo esta frecuencia del sistema influye directamente en la precisión temporal y las tasas de muestreo.
---- 
+
+---
+
+## ✏️ 4. Generar el Código
+Una vez configuradas las funciones de nuestro micrcontrolador. Podemos Crear nuestro código con los parámetros configurados. Para ello presionaremos `Ctrl + Shift + S`.
+
+Nos preguntará si queremos generar nuestro código. A lo que deberemos responder que `Sí`.
+
+> [!IMPORTANT]
+> Si cómo se generan estos archivos a la Izquierda algo anda mal. 
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/ArchivosGenerados.png" alt="Archivos Generados Tras Guardar" width="700">
+  <br>
+  <em>Archivos Generados Tras Guardar</em>
+</p>
+
+Eso significa que algunos paquetes no fueron descargados de manera automática cuando seleccionaste tu placa.
+Para arreglarlo dirígete a `Software Packs` luego `Select Components` y finalmente instala todo lo que aparezca con la etiqueta **install**.
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/Pack.png" alt="Software Packs" width="400">
+  <br>
+  <em>Software Packs</em>
+</p>
+
+> [!NOTE]
+> Es importante que hayas iniciado sesión como te lo indiqué anteriormente. Caso contrario no podrás instalarlos. 
+
+---
 
 > [!NOTE]
 > Te daré la confguración específica para cada función como: GPIO, ADC, UART, etc. 
