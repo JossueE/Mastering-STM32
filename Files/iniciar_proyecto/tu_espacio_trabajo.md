@@ -15,12 +15,12 @@ Comprender su estructura te permitirá mantener tus proyectos ordenados y evitar
 
 - [📁 1. Carpetas principales del proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-1-carpetas-principales-del-proyecto)
 - [🧠 2. Estructura del Código Generado (`main.c`)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-2-estructura-del-c%C3%B3digo-generado-mainc)
-- [📝 3. Cargarle Código a tu Tarjeta. ]()
-- [🔧 4. Herramientas del Entorno (Correr Código en tu Tarjeta)]()
-  - [1. Compilación del Proyecto (Build)]()
-  - [2. Correr en Modo Depuración (Debug)]()
-  - [3. Correr en Modo Run]()
-  - [4. Ventana Serial (Terminal UART)]()
+- [📝 3. Cargarle Código a tu Tarjeta. ](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-cargarle-c%C3%B3digo-a-tu-tarjeta)
+- [🔧 4. Herramientas del Entorno (Correr Código en tu Tarjeta)]()https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-herramientas-del-entorno-correr-c%C3%B3digo-en-tu-tarjeta
+  - [1. Compilación del Proyecto (Build)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-compilaci%C3%B3n-del-proyecto-build)
+  - [2. Correr en Modo Depuración (Debug)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#2-correr-en-modo-depuraci%C3%B3n-debug)
+  - [3. Correr en Modo Run](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#3-correr-en-modo-run)
+  - [4. Ventana Serial (Terminal UART)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#4-ventana-serial-terminal-uart)
 
 ---
 
