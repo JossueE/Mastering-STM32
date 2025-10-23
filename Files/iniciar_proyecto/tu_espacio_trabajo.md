@@ -13,13 +13,16 @@ Comprender su estructura te permitirá mantener tus proyectos ordenados y evitar
 
 ## 📖 Partes del Capítulo
 
-- [📁 1. Carpetas principales del proyecto]()
-- [🧠 2. Estructura del Código Generado (`main.c`)]()
-- [💡 3. Herramientas del Espacio de Trabajo]()
+- [📁 1. Carpetas principales del proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-carpetas-principales-del-proyecto)
+- [🧠 2. Estructura del Código Generado (`main.c`)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-2-estructura-del-c%C3%B3digo-generado-mainc)
+- [🔧 3. Herramientas del Entorno](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-herramientas-del-entorno)
+  - [1. Compilación del Proyecto (Build)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-compilaci%C3%B3n-del-proyecto-build)
+  - [2. Depuración (Debug)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#2-depuraci%C3%B3n-debug)
+  - [3. Ventana Serial (Terminal UART)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#3-ventana-serial-terminal-uart)
 
 ---
 
-## 1. Carpetas principales del proyecto
+## 📁 1. Carpetas principales del proyecto
 
 
 Cuando presionas **Generate Code** en el archivo `.ioc`, STM32CubeIDE crea automáticamente la estructura completa de tu proyecto en lenguaje C/C++.  
