@@ -61,7 +61,7 @@ Ahora si, con todo lo visto anteriormente. Estás preparado para hacer tu primer
 Debemos encontrar algo así
 
 <p align="center">
-  <img src="../../Images/GPIO/LED.png" alt="LEDs de Usuario de la Tarjeta NUCLEO-H563ZI" width="700">
+  <img src="../../Images/GPIO/LED.png" alt="LEDs de Usuario de la Tarjeta NUCLEO-H563ZI" width="800">
   <br>
   <em>LEDs de Usuario de la Tarjeta NUCLEO-H563ZI</em>
 </p>

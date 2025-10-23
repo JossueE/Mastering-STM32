@@ -15,10 +15,12 @@ Comprender su estructura te permitirá mantener tus proyectos ordenados y evitar
 
 - [📁 1. Carpetas principales del proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-1-carpetas-principales-del-proyecto)
 - [🧠 2. Estructura del Código Generado (`main.c`)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-2-estructura-del-c%C3%B3digo-generado-mainc)
-- [🔧 3. Herramientas del Entorno](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-herramientas-del-entorno)
-  - [1. Compilación del Proyecto (Build)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-compilaci%C3%B3n-del-proyecto-build)
-  - [2. Depuración (Debug)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#2-depuraci%C3%B3n-debug)
-  - [3. Ventana Serial (Terminal UART)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#3-ventana-serial-terminal-uart)
+- [📝 3. Cargarle Código a tu Tarjeta. ]()
+- [🔧 4. Herramientas del Entorno (Correr Código en tu Tarjeta)]()
+  - [1. Compilación del Proyecto (Build)]()
+  - [2. Correr en Modo Depuración (Debug)]()
+  - [3. Correr en Modo Run]()
+  - [4. Ventana Serial (Terminal UART)]()
 
 ---
 
@@ -87,7 +89,40 @@ Estos bloques sirven para **separar el código del usuario** del código **autom
 > Por eso, **siempre programa dentro de los bloques** `USER CODE BEGIN` y `USER CODE END` para no perder tus cambios.
 
 
-## 🔧 Herramientas del Entorno
+---
+## 📝 Cargarle Código a tu Tarjeta. 
+
+Para poder cargarle código a tu tarjeta primero debemos hacer un par de configuraciones:
+
+En la parte superior selecciona `RUN` y `RUN Configurations`, se desplegará esta pestaña:
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/RunConfigurations.png" alt="Pestaña RUN Configurations" width="700">
+  <br>
+  <em>Pestaña RUN Configurations</em>
+</p>
+
+Da doble click sobre `STM32 C/C++ Application`. Se desplegará esta ventana y se generará un archivo con `NOMBRE_DE_TU_PROYECT Debug`, aquí en la pestaña `main` asegúrate que el proyecta tenga el nombre que le asignaste. Y que `C/C++ Application` contenga `Debug/NOMBRE_DE_TU_PROYECT.elf`:
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/MainConfigurations.png" alt="Pestaña RUN Configurations - Main" width="700">
+  <br>
+  <em>Pestaña RUN Configurations - Main</em>
+</p>
+
+En Debugger busca el recuadro `Misc` y asegurate de activar `Shared ST-LINK`. En el caso que el apartado Reset behavior contenga `Habilita Halt al cores` colócalo, de lo contrario déjala por `defecto`. 
+
+<p align="center">
+  <img src="../../Images/iniciar_proyecto/DebuggConfiguration.png" alt="Pestaña RUN Configurations - Debugger" width="700">
+  <br>
+  <em>Pestaña RUN Configurations - Debugger</em>
+</p>
+
+Haz `Click` en `Apply` y en `Close`
+
+---
+
+## 🔧 Herramientas del Entorno (Correr Código en Tu Tarjeta)
 
 STM32CubeIDE incluye una serie de herramientas integradas que permiten compilar, cargar y depurar tus programas directamente sobre la placa.  
 A continuación, se describen las más importantes que utilizarás durante el desarrollo.
@@ -117,12 +152,12 @@ Antes de ejecutar tu código, es necesario **compilarlo** para convertir los arc
 > Puedes usar *Project → Clean Project* para eliminar archivos antiguos antes de recompilar si notas comportamientos extraños.
 
 
-### 2. Depuración (Debug)
+### 2. Correr en Modo Depuración (Debug)
 
 El modo **Debug** te permite ejecutar el programa paso a paso, colocar puntos de interrupción (breakpoints) y analizar el comportamiento del microcontrolador en tiempo real.
 
 - **Ruta rápida:**  
-  Menú superior → **Run → Debug**  
+  Menú superior → **Run → Debug As → STM32 C/C++ Application**  *(recomendado)*
   o el icono del insecto 🪲 en la barra de herramientas.
 
 - **Qué ocurre:**  
@@ -139,7 +174,19 @@ El modo **Debug** te permite ejecutar el programa paso a paso, colocar puntos de
 > [!IMPORTANT]
 > Durante la depuración, el microcontrolador se detiene temporalmente. Cuando termines, presiona **Stop** para finalizar la sesión.
 
-### 3. Ventana Serial (Terminal UART)
+### 3. Correr en Modo Run
+
+El modo **Run** te permite ejecutar todo el programa, para ver su comportamiento final en la tarjeta.
+
+- **Ruta rápida:**  
+  Menú superior → **Run → Run As → STM32 C/C++ Application**  *(recomendado)*
+  o el icono del insecto ▶️ en la barra de herramientas.
+
+- **Qué ocurre:**  
+  El IDE carga el código compilado en la memoria de la placa (a través del ST-Link).
+
+
+### 4. Ventana Serial (Terminal UART)
 
 En STM32 no tenemos una terminal que nos sirva como método de DEBUG. Para ello podemos enviar y recibir información desde la placa (por ejemplo, imprimir mensajes de depuración o datos de sensores), puedes usar la **ventana serial integrada** en CubeIDE.
 
