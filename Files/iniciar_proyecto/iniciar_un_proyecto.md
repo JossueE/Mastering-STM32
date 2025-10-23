@@ -185,6 +185,20 @@ Asegurar que todos los módulos del sistema (núcleo, buses, periféricos) funci
   <em>Pestaña Clock Configuration</em>
 </p>
 
+El valor central que aparece en la pestaña **Clock Configuration** representa la **frecuencia principal del sistema (SYSCLK)**, es decir, la velocidad a la que el microcontrolador ejecuta sus instrucciones.
+
+Cambiar esta frecuencia permite ajustar el rendimiento y el consumo energético del microcontrolador según las necesidades del proyecto:
+
+| Frecuencia          | Ventajas                                                                                                            | Desventajas                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **Alta (250 MHz)**  | Mayor velocidad de ejecución, ideal para tareas exigentes (procesamiento de señales, RTOS, comunicaciones rápidas). | Mayor consumo de energía y generación de calor.                      |
+| **Media (75 MHz)**  | Suficiente para proyectos básicos (GPIO, PWM, UART, sensores), con un consumo reducido.                             | Menor rendimiento en operaciones intensivas.                         |
+| **Baja (< 25 MHz)** | Mínimo consumo, ideal para modos de bajo poder o proyectos portátiles.                                              | Ejecución lenta, no adecuada para aplicaciones con tiempos críticos. |
+
+Cuando cambias la frecuencia (por ejemplo, de **250 MHz a 75 MHz**), **STM32CubeIDE** recalcula automáticamente los relojes derivados (buses, periféricos, timers, ADC, etc.), ajustando todos los divisores y prescalers del sistema.
+
+[!NOTE]
+> Más adelante, cuando implementes **Timers, ADC o PWM**, verás cómo esta frecuencia del sistema influye directamente en la precisión temporal y las tasas de muestreo.
 --- 
 
 > [!NOTE]

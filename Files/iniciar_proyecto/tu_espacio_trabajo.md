@@ -79,3 +79,21 @@ Estos archivos contienen la inicialización de periféricos, reloj del sistema y
 - Crea una carpeta dedicada para **documentación** (por ejemplo, `Docs/`) donde guardes notas, esquemas y diagramas.  
 - Si tu proyecto incluye varios módulos (por ejemplo, `Sensors/`, `Motors/`, `Comm/`), agrúpalos dentro de **Core/Src** y **Core/Inc**.  
 - Usa nombres descriptivos para tus proyectos:  
+NUCLEO_LED_Blink
+NUCLEO_UART_Com
+
+
+- Haz copias de seguridad periódicas de tu workspace o sincronízalo con GitHub.
+
+<p align="center">
+<img src="../../Images/workspace/workspace_view.png" alt="Vista del Workspace en STM32CubeIDE" width="700">
+<br>
+<em>Vista general del Workspace en STM32CubeIDE.</em>
+</p>
+
+---
+
+Con esto ya comprendes la estructura básica del **Workspace** y cómo STM32CubeIDE organiza tus proyectos.  
+En el siguiente capítulo aprenderás a **crear tu primer proyecto desde cero** y configurar los pines, periféricos y relojes de tu microcontrolador STM32. ⚡  
+
+[(Ir al siguiente capítulo: Inicia tu Primer Proyecto)](../../Files/iniciar_proyecto/Iniciar_Proyecto.md)
