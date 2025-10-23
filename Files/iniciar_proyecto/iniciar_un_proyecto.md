@@ -242,4 +242,4 @@ En el siguiente capítulo exploraremos nuestro lugar de trabajo, te daré una ex
 
 En el siguiente capítulo exploraremos los **GPIO (General Purpose Input/Output)** y aprenderás a interactuar con el mundo físico mediante un pequeño demo práctico desde tu microcontrolador STM32. 💡
 
-[(Ver siguiente capítulo: GPIO)](../../Files/iniciar_proyecto/iniciar_un_proyecto.md)
+[(Ir al siguiente capítulo: Tu Espacio de Trabajo)](../../Files/iniciar_proyecto/tu_espacio_trabajo.md)

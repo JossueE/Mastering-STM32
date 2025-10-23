@@ -133,13 +133,21 @@ Debemos encontrar algo así
 14. En el campo central se encuentra la frecuencia de tu reloj, en mi caso es 250MHz. Para esta práctica lo cambiaremos a 75Mhz.
 Cuando modifiques el valor, notarás como los valores de hasta el final se ven actualizados. 
 
- <p align="center">
-  <img src="../../Images/GPIO/SYSClock.pngg" alt="Pestaña Clock Configuration con CLK Ajustado" width="700">
+<p align="center">
+  <img src="../../Images/GPIO/SYSClock.png" alt="Pestaña Clock Configuration con CLK Ajustado" width="700">
   <br>
   <em>Pestaña Clock Configuration con CLK Ajustado</em>
 </p>
 
 15. Guarda tu archivo con la clave `Ctrl + Shift + S`
 16. Te pedirá si quieres crear tu código. Dales que `Sí`
-17. En el caso de que no suceda nada, dirígete a
+17. En el caso de que no aparezca códigos o no veas archivos generados a la izquierda, revisa el contenido del capítulo [Iniciar Proyecto: Generar Código](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
+
+18. Dirígete al Archivo `main.c` si te parece abrumador ver tantos archivos. O código que no entiendes, revisa el capítulo [Iniciar Proyecto: Conoce tu Espacio de Trabajo](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md) en el cuál te doy una explicación rápida de lo que ves y las herramientas que utilizaremos. 
+
+<p align="center">
+  <img src="../../Images/GPIO/Main.png" alt="Primera vistaso de main.c" width="700">
+  <br>
+  <em>Primera vistaso de main.c</em>
+</p>
 

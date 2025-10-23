@@ -10,6 +10,9 @@
         - [3. Explorando la pestaña Clock Configuration](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-3-explorando-la-pesta%C3%B1a-clock-configuration)
         - [4. Generar el Código](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
     
-    - [Conoce tu Espacio de Trabajo](Files/iniciar_proyecto/tu_espacio_trabajo.md)
+    - [Conoce tu Espacio de Trabajo](Files/iniciar_proyecto/tu_espacio_trabajo.md)  
+        - [1. Compilación del Proyecto (Build)]()
+        - [2. Depuración (Debug)]()
+        - [3. Ventana Serial (Terminal UART)]()
 
-5. [GPIO]()
+5. [GPIO](Files/GPIO/GPIO.md)
