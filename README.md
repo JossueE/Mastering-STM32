@@ -11,7 +11,7 @@
         - [4. Generar el Código](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/iniciar_un_proyecto.md#%EF%B8%8F-4-generar-el-código)
     
     - [Conoce tu Espacio de Trabajo](Files/iniciar_proyecto/tu_espacio_trabajo.md)  
-        - [1. Carpetas principales del proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-carpetas-principales-del-proyecto)
+        - [1. Carpetas principales del proyecto](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-1-carpetas-principales-del-proyecto)
         - [2. Estructura del Código Generado (`main.c`)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-2-estructura-del-c%C3%B3digo-generado-mainc)
         - [3. Herramientas del Entorno](https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#-herramientas-del-entorno)
 
