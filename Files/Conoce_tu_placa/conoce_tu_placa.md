@@ -31,6 +31,10 @@ Dirígete a la pestaña de CAD Resources, ahí encontrarás todos los documentos
   <em>Pestaña CAD Resources</em>
 </p>  
 
+Para este curso trabajaremos con la librería **HAL** (*Hardware Abstraction Layer*) de STM. Es por así decirlo una manera de simplificar procesos en nuestro microcontrolador, es muy útil para la mayoría de proyectos y en la mayoría de aplicaciones industriales. Sin embargo, si tu intención es dedicarte de manera seria a la ingeniería embebida. A nivel profesional en algunos sectores no se recomienda su uso y tampoco se pide. Pero es la mejor manera de introducirse a lo microcontroladores STM32 por si en un futuro te gustaría seguir desarrollandote.
+
+No he encontrado la documentación de la librería HAL para la tarjeta NUCLEO-H563ZI pero dejo la documentación de la familia NUCLEO-H7*** que es muy semejante. Te recomiendo descargarla. [Doc. Librería HAL STM](https://www.st.com/resource/en/user_manual/dm00392525-description-of-stm32h7-hal-and-lowlayer-drivers-stmicroelectronics.pdf)
+
 
 > [!TIP]  
 > Guárdalos en una carpeta dentro de tu workspace, por ejemplo:  

@@ -82,11 +82,25 @@ Estos bloques sirven para **separar el código del usuario** del código **autom
 | `/* USER CODE BEGIN 4 */`                   | Lugar para funciones personalizadas adicionales.                                                         |
 | `/* USER CODE BEGIN Error_Handler_Debug */` | Sección para definir qué hacer si ocurre un error crítico (por ejemplo, encender un LED de alerta).      |
 
-
-
 > [!IMPORTANT]  
 > Cualquier código que escribas **fuera de estos bloques** será **eliminado** si vuelves a generar el código desde el `.ioc`.
 > Por eso, **siempre programa dentro de los bloques** `USER CODE BEGIN` y `USER CODE END` para no perder tus cambios.
+
+La estructura del código de programación para un microcontrolador se puede simplificar en dos fases. El `loop principal` y el `set up`. 
+Basicamente, todo lo que no se encuentre dentro de el `while` principal se utiliza para definir funciones, variables, etc. Es decir configuraciones.
+En tu `loop principal` vivirá tu código, eso se repitirá una y otra vez de manera indefinida. 
+
+```C
+
+  // Loop Principal
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+  }
+
+``` 
 
 
 ---

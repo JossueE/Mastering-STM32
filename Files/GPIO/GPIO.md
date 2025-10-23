@@ -151,5 +151,54 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
   <em>Primera vistaso de main.c</em>
 </p>
 
-19. Para este curso 
+19. Abre tu documentación de la librería HAL, que debiste haber descargado junto a los esquemáticos en [Conoce tu Tarjeta (Como Obtener los Esquemáticos)](https://github.com/JossueE/Mastering-STM32/blob/main/Files/Conoce_tu_placa/conoce_tu_placa.md#-conoce-tu-tarjeta) por qué lo necesitarás. 
+
+20. Para el ejercicio escribiremos un código que encienda los tres LEDs intercalando sus estados con un delay de 1 segundo entre cada LED.
+
+21. Para ello iremos a nuestro manual de la librería HAL, obtenido en el punto anterior, buscaremos la función HAL_GPIO_TogglePin y HAL_Delay. Veremos cuáles son los valores que se necesitan y cómo configurarlos. 
+
+22. En este ejercicio yo te daré el código mínimo y la explicación para que aprendas como funciona. 
+
+```C
+
+  // Loop Principal
+  while (1)
+  {
+    /* USER CODE END WHILE */
+    HAL_GPIO_TogglePin (GPIOB, LD1_Pin);
+    HAL_Delay (1000);
+    HAL_GPIO_TogglePin (GPIOF, LD2_Pin);
+    HAL_Delay (1000);
+    HAL_GPIO_TogglePin (GPIOG, LD3_Pin);
+    HAL_Delay (1000);
+
+    /* USER CODE BEGIN 3 */
+  }
+
+``` 
+
+Si observas, para definir un **GPIO** utilizamos primero el **puerto** por el cual está asignado nuestro **pin** y luego el **nombre** correspondiente de dicho pin. Para identificar correctamente el puerto y saber cómo escribirlo, debemos consultar el **esquemático** obtenido en el **Punto 2** de este ejercicio.
+
+En dicho esquema podemos ver pines como **PB0**, **PF4** o **PG4**. La nomenclatura sigue una estructura simple: la letra **P** indica **Port**, seguida de una **letra (B, F o G)** que identifica el **puerto**, y finalmente el número del pin.
+
+Cuando asignamos un **nombre de usuario (User Label)** a cada pin —como se indica en el **Punto 11** del ejercicio—, ese nombre reemplaza el valor predeterminado en el código. Esto puede verificarse fácilmente en el código generado: al revisar cómo se inicializa un pin con un User Label asignado y cómo se ve cuando no lo tiene.
+
+``` C
+/*Configure GPIO pin : PC13 */
+GPIO_InitStruct.Pin = GPIO_PIN_13;
+GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+GPIO_InitStruct.Pull = GPIO_NOPULL;
+HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+/*Configure GPIO pin : LD2_Pin */
+GPIO_InitStruct.Pin = LD2_Pin;
+GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+GPIO_InitStruct.Pull = GPIO_NOPULL;
+GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+``` 
+
+
+
+
 
