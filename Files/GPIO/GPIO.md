@@ -46,7 +46,7 @@ Cada pin puede cumplir múltiples funciones dependiendo de su configuración en 
 
 Ahora si, con todo lo visto anteriormente. Estás preparado para hacer tu primer script funcional. 
 
-### Encender un LED de la Tarjeta
+### Encender un LED de la Tarjeta (Escribir en GPIO)
 
 1. Crearemos un proyecto nuevo con lo visto anteriormente [Configuración de tu Tarjeta](../../Files/iniciar_proyecto/iniciar_un_proyecto.md), seguiremos los pasos hasta llegar al punto 13 y en lenguaje de programación escogeremos C. Deberíamos llegar a esta Pantalla.
 
@@ -155,7 +155,16 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
 
 20. Para el ejercicio escribiremos un código que encienda los tres LEDs intercalando sus estados con un delay de 1 segundo entre cada LED.
 
-21. Para ello iremos a nuestro manual de la librería HAL, obtenido en el punto anterior, buscaremos la función HAL_GPIO_TogglePin y HAL_Delay. Veremos cuáles son los valores que se necesitan y cómo configurarlos. 
+21. Para ello iremos a nuestro manual de la librería HAL, obtenido en el punto anterior, buscaremos la función HAL_GPIO_TogglePin y HAL_Delay. Veremos cuáles son los valores que se necesitan y cómo configurarlos. Estás son algunas de las funciones que existen y su propósito, pero siempre deberás corroborar la información.
+
+| **Función HAL**                             | **Descripción / Propósito**                                                                                                                   | **Tipo de escritura**                                      |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **`HAL_GPIO_WritePin()`**                   | Escribe directamente un nivel lógico alto o bajo (`GPIO_PIN_SET` / `GPIO_PIN_RESET`) sobre uno o varios pines de un puerto.                   | Escritura directa sobre el estado lógico del pin.          |
+| **`HAL_GPIO_TogglePin()`**                  | Cambia (invierte) el estado actual del pin, de alto a bajo o viceversa. Muy usada en tareas periódicas o parpadeo de LEDs.                    | Escritura indirecta (conmutación del estado).              |
+| **`HAL_GPIO_Init()` / `HAL_GPIO_DeInit()`** | Configuran o restauran los parámetros del pin (modo, tipo de salida, velocidad, resistencias internas). No alteran el valor lógico de salida. | Escritura en registros de configuración del GPIO.          |
+| **`HAL_GPIO_LockPin()`**                    | Bloquea la configuración del pin para evitar modificaciones posteriores hasta el próximo reinicio del microcontrolador.                       | Escritura de bloqueo en registros de control.              |
+| **`HAL_GPIO_EXTI_IRQHandler()`**            | Atiende una interrupción externa asociada al pin y limpia las banderas de interrupción correspondientes.                                      | Escritura de limpieza en registros de interrupción (EXTI). |
+
 
 22. En este ejercicio yo te daré el código mínimo y la explicación para que aprendas como funciona. 
 
@@ -179,7 +188,7 @@ Cuando modifiques el valor, notarás como los valores de hasta el final se ven a
 
 Si observas, para definir un **GPIO** utilizamos primero el **puerto** por el cual está asignado nuestro **pin** y luego el **nombre** correspondiente de dicho pin. Para identificar correctamente el puerto y saber cómo escribirlo, debemos consultar el **esquemático** obtenido en el **Punto 2** de este ejercicio.
 
-En dicho esquema podemos ver pines como **PB0**, **PF4** o **PG4**. La nomenclatura sigue una estructura simple: la letra **P** indica **Port**, seguida de una **letra (B, F o G)** que identifica el **puerto**, y finalmente el número del pin.
+En dicho esquema podemos ver pines como **PB0**, **PF4** o **PG4** los cuales anotamos previamente en el **Punto 4**. La nomenclatura sigue una estructura simple: la letra **P** indica **Port**, seguida de una **letra (B, F o G)** que identifica el **puerto**, y finalmente el número del pin.
 
 Cuando asignamos un **nombre de usuario (User Label)** a cada pin —como se indica en el **Punto 11** del ejercicio—, ese nombre reemplaza el valor predeterminado en el código. Esto puede verificarse fácilmente en el código generado: al revisar cómo se inicializa un pin con un User Label asignado y cómo se ve cuando no lo tiene.
 
@@ -197,8 +206,36 @@ GPIO_InitStruct.Pull = GPIO_NOPULL;
 GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
 HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 ``` 
+23. Para correr tu archivo da click sobre `Build` y luego cárgalo con `Run As` o `Debugg As`. Si no sabes cómo hacerlo, revisa el capítulo [Tu Espacio de Trabajo]((https://github.com/JossueE/Mastering-STM32/blob/main/Files/iniciar_proyecto/tu_espacio_trabajo.md#1-compilaci%C3%B3n-del-proyecto-build))
 
 
+#### Ejercicio de Práctica 
+Conectar tres LEDs externos a pines GPIO del STM32, configurarlos como salida push-pull, y escribir un programa que encienda/apague cada LED en secuencia, con 1 s de retardo entre ellos.
 
+##### Materiales 
+- 3× LED (rojo, amarillo, verde o los que tengas).
 
+- 3× resistencias (entre 150 Ω y 330 Ω; 220 Ω es una elección segura para 3.3 V).
 
+- Protoboard y jumpers.
+
+- Tu placa STM32 (e.g., NUCLEO-H563ZI) y cable USB.
+
+##### Esquema de Conexión de los LED
+
+<p align="center">
+  <img src="../../Images/GPIO/ExternLED.png" alt="Diagrama de Conexión para un LED externo" width="400">
+  <br>
+  <em>Diagrama de Conexión para un LED externo</em>
+</p>
+
+> [!NOTE]
+> Para la selección de PINs - GPIO deberás investigarlo y decidirlo por tu cuenta, analizando los esquemáticos.  
+
+##### Funciones a Utilizar 
+
+- `HAL_GPIO_TogglePin(GPIOx, GPIO_Pin)` → conmutar el LED.
+
+- `HAL_GPIO_WritePin(GPIOx, GPIO_Pin, GPIO_PIN_SET/RESET)` → poner Alto/Bajo.
+
+- `HAL_Delay(ms)` → retardo. 
